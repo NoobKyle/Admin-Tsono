@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html style="color-scheme: light; supported-color-schemes: light;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>body {
+margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+}
+img {
+border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;
+}
+@font-face {
+font-family: 'Inter'; font-style: normal; font-weight: 100; font-display: swap; src: url('https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyeMZg.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Inter'; font-style: normal; font-weight: 200; font-display: swap; src: url('https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyfMZg.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Inter'; font-style: normal; font-weight: 300; font-display: swap; src: url('https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url('https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url('https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url('https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Inter'; font-style: normal; font-weight: 800; font-display: swap; src: url('https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYMZg.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Inter'; font-style: normal; font-weight: 900; font-display: swap; src: url('https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYMZg.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Arial'; font-style: normal; font-weight: 400; src: local('Arial'), url('https://fonts.cdnfonts.com/s/29105/ARIAL.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial'; font-style: normal; font-weight: 400; src: local('Arial'), url('https://fonts.cdnfonts.com/s/29105/ARIALN.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial'; font-style: italic; font-weight: 400; src: local('Arial'), url('https://fonts.cdnfonts.com/s/29105/ARIALI 1.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial'; font-style: italic; font-weight: 400; src: local('Arial'), url('https://fonts.cdnfonts.com/s/29105/ARIALI.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial'; font-style: italic; font-weight: 400; src: local('Arial'), url('https://fonts.cdnfonts.com/s/29105/ARIALNI.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial'; font-style: normal; font-weight: 500; src: local('Arial'), url('https://fonts.cdnfonts.com/s/29105/ArialMdm.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial'; font-style: italic; font-weight: 500; src: local('Arial'), url('https://fonts.cdnfonts.com/s/29105/ArialMdmItl.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial'; font-style: normal; font-weight: 700; src: local('Arial'), url('https://fonts.cdnfonts.com/s/29105/ARIALBD 1.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial'; font-style: normal; font-weight: 700; src: local('Arial'), url('https://fonts.cdnfonts.com/s/29105/ARIALBD.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial'; font-style: normal; font-weight: 700; src: local('Arial'), url('https://fonts.cdnfonts.com/s/29105/ARIALNB.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial'; font-style: italic; font-weight: 700; src: local('Arial'), url('https://fonts.cdnfonts.com/s/29105/ARIALBI 1.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial'; font-style: italic; font-weight: 700; src: local('Arial'), url('https://fonts.cdnfonts.com/s/29105/ARIALBI.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial'; font-style: italic; font-weight: 700; src: local('Arial'), url('https://fonts.cdnfonts.com/s/29105/ARIALNBI.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial'; font-style: normal; font-weight: 900; src: local('Arial'), url('https://fonts.cdnfonts.com/s/29105/ARIBLK.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial Black'; font-style: italic; font-weight: 400; src: local('Arial Black'), url('https://fonts.cdnfonts.com/s/29105/ARIALBLACKITALIC.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial Light'; font-style: normal; font-weight: 300; src: local('Arial Light'), url('https://fonts.cdnfonts.com/s/29105/ARIALLGT.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial CE'; font-style: normal; font-weight: 500; src: local('Arial CE'), url('https://fonts.cdnfonts.com/s/29105/ArialCE.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial CE MT Black'; font-style: normal; font-weight: 900; src: local('Arial CE MT Black'), url('https://fonts.cdnfonts.com/s/29105/ArialCEMTBlack.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial CE'; font-style: normal; font-weight: 7; src: local('Arial CE'), url('https://fonts.cdnfonts.com/s/29105/arialceb.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial Light'; font-style: italic; font-weight: 300; src: local('Arial Light'), url('https://fonts.cdnfonts.com/s/29105/ARIALLGTITL.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial CE'; font-style: italic; font-weight: 500; src: local('Arial CE'), url('https://fonts.cdnfonts.com/s/29105/ArialCEItalic.woff') format('woff');
+}
+@font-face {
+font-family: 'Arial CE'; font-style: italic; font-weight: 700; src: local('Arial CE'), url('https://fonts.cdnfonts.com/s/29105/ArialCEBoldItalic.woff') format('woff');
+}
+@media only screen and (min-width:480px) {
+  .mj-column-per-100 {
+    width: 100% !important; max-width: 100%;
+  }
+}
+@media only screen and (max-width:479px) {
+  table.mj-full-width-mobile {
+    width: 100% !important;
+  }
+  td.mj-full-width-mobile {
+    width: auto !important;
+  }
+}
+@media only screen and (min-width: 320px) {
+  body::-webkit-scrollbar {
+    display: none !important;
+  }
+  p {
+    margin: 0 !important;
+  }
+  a {
+    margin: 0 !important;
+  }
+  .mj-t>div>div>table>tbody>tr>td {
+    padding: 0 !important;
+  }
+  .mj-t div.component-wrapper>table>tbody>tr>td {
+    padding: 0 !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .f89-87 img {
+    width: auto !important;
+  }
+  .e88-ae img {
+    width: auto !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .dh {
+    display: block !important;
+  }
+  .mh {
+    display: none !important; mso-hide: all !important;
+  }
+  .mh table {
+    mso-hide: all !important;
+  }
+  .mh tbody {
+    mso-hide: all !important;
+  }
+  .mh tr {
+    mso-hide: all !important;
+  }
+  .mh td {
+    mso-hide: all !important;
+  }
+  .mh div {
+    mso-hide: all !important;
+  }
+  .mh p {
+    mso-hide: all !important;
+  }
+  .mh a {
+    mso-hide: all !important;
+  }
+  .mh span {
+    mso-hide: all !important;
+  }
+  .mh img {
+    mso-hide: all !important;
+  }
+  .mj-g {
+    width: 100% !important; max-width: 100% !important;
+  }
+  .gc .nf img {
+    max-width: 100% !important; height: auto !important;
+  }
+  .mj-b>table {
+    width: 100% !important;
+  }
+  .mj-b>table p {
+    width: 100% !important;
+  }
+  .mj-b>table a {
+    width: 100% !important;
+  }
+  .mj-b p {
+    padding-left: initial !important; padding-right: initial !important;
+  }
+  .mj-b a {
+    padding-left: initial !important; padding-right: initial !important;
+  }
+  .mj-h>table>tbody>tr>td {
+    height: auto !important;
+  }
+  .ebc-29>tbody>tr>td>div>table>tbody>tr>td {
+    padding-bottom: 0px !important; padding-right: 10px !important; padding-left: 10px !important; padding-top: 10px !important;
+  }
+  .ebc-29 .mj-s>tbody>tr>td>div>table>tbody>tr>td {
+    padding-right: 0px !important; padding-left: 0px !important;
+  }
+  .f89-87 img {
+    height: auto !important;
+  }
+  .eac-e0>table>tbody>tr>td {
+    padding-top: 20px !important; padding-right: 20px !important; padding-left: 20px !important; padding-bottom: 20px !important;
+  }
+  .eb5-23>table>tbody>tr>td {
+    padding-right: 40px !important; padding-top: 35px !important; padding-left: 40px !important; padding-bottom: 16px !important;
+  }
+  .eb5-23>table>tbody>tr>td>div>table>tbody>tr>td {
+    padding-right: 0px !important; padding-left: 0px !important;
+  }
+  .fa5-76>div {
+    text-align: left !important;
+  }
+  .fb2-09>table>tbody>tr>td {
+    padding-right: 40px !important; padding-top: 35px !important; padding-left: 40px !important; padding-bottom: 5px !important;
+  }
+  .fb2-09>table>tbody>tr>td>div>table>tbody>tr>td {
+    padding-right: 0px !important; padding-left: 0px !important;
+  }
+  .d8d-bf>table>tbody>tr>td {
+    padding-top: 20px !important; padding-right: 40px !important; padding-left: 40px !important; padding-bottom: 20px !important;
+  }
+  .ba9-8c>tbody>tr>td>div>table>tbody>tr>td {
+    padding-top: 0px !important; padding-left: 10px !important; padding-right: 10px !important; padding-bottom: 0px !important;
+  }
+  .ba9-8c .mj-s>tbody>tr>td>div>table>tbody>tr>td {
+    padding-left: 0px !important; padding-right: 0px !important;
+  }
+  .e88-ae img {
+    height: auto !important;
+  }
+  .e85-a6>div {
+    text-align: left !important;
+  }
+  .bab-1e>table>tbody>tr>td {
+    padding-right: 40px !important; padding-top: 35px !important; padding-left: 40px !important; padding-bottom: 5px !important;
+  }
+  .bab-1e>table>tbody>tr>td>div>table>tbody>tr>td {
+    padding-right: 0px !important; padding-left: 0px !important;
+  }
+  .aad-32>table>tbody>tr>td {
+    padding-top: 20px !important; padding-right: 40px !important; padding-left: 40px !important; padding-bottom: 20px !important;
+  }
+  div.b {
+    padding: 0px 0px 0px 0px !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark; supported-color-schemes: dark light;
+  }
+  .ll {
+    display: none !important;
+  }
+  .dl {
+    display: block !important;
+  }
+  .b {
+    background-color: #141414 !important;
+  }
+  .mj-w {
+    background-color: #0B0B0B !important;
+  }
+  .mj-w>table {
+    background-color: #0B0B0B !important;
+  }
+  .mj-w .f>table>tbody>tr>td {
+    background-color: transparent !important;
+  }
+  .mj-w .f>tbody>tr>td {
+    background-color: transparent !important;
+  }
+  .mj-w .mj-h>table>tbody>tr>td {
+    background-color: transparent !important;
+  }
+  .mj-w .f .mj-t {
+    background-color: transparent !important;
+  }
+  .mj-w .f .mj-b {
+    background-color: transparent !important;
+  }
+  .mj-w .text {
+    color: #ffffff !important;
+  }
+  .mj-w .text>div {
+    color: #ffffff !important;
+  }
+  .mj-w p {
+    color: #ffffff !important;
+  }
+  .mj-w .link {
+    color: #ffffff !important;
+  }
+  .mj-w .link>div {
+    color: #ffffff !important;
+  }
+  .ebc-29 {
+    background-color: #0B0B0B !important;
+  }
+  .ebc-29>table {
+    background-color: #0B0B0B !important;
+  }
+  .ebc-29 .f>table>tbody>tr>td {
+    background-color: transparent !important;
+  }
+  .ebc-29 .f>tbody>tr>td {
+    background-color: transparent !important;
+  }
+  .ebc-29 .f .mj-t {
+    background-color: transparent !important;
+  }
+  .ebc-29 .f .mj-b {
+    background-color: transparent !important;
+  }
+  .ba9-8c {
+    background-color: #0B0B0B !important;
+  }
+  .ba9-8c>table {
+    background-color: #0B0B0B !important;
+  }
+  .ba9-8c .f>table>tbody>tr>td {
+    background-color: transparent !important;
+  }
+  .ba9-8c .f>tbody>tr>td {
+    background-color: transparent !important;
+  }
+  .ba9-8c .f .mj-t {
+    background-color: transparent !important;
+  }
+  .ba9-8c .f .mj-b {
+    background-color: transparent !important;
+  }
+}
+</style>
+</head>
+<body style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;">
+<div style="display:none !important;visibility:hidden;mso-hide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">The riding app for motorcycle culture — built in DFW, launching in Texas</div>
+<div style="display:none !important;visibility:hidden;mso-hide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">&#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; &#847; &#8204;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#65279; </div>
+    <title>Tsono — Pre-Seed Opportunity | DFW</title>
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if mso]>
+    <noscript>
+    <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    </noscript>
+    <![endif]-->
+    <!--[if lte mso 11]>
+    <style type="text/css">
+      .mj-outlook-group-fix { width:100% !important; }
+    </style>
+    <![endif]-->
+
+      <!--[if !mso]><!-->
+
+
+
+      <!--<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="b bBg" style="background-color: #0B0B0B;" lang="en" dir="auto">
+
+      <table align="center" class="ebc-29 r mj-w" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+        <tbody>
+          <tr>
+            <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+
+
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="ebc-29-outlook r-outlook mj-w-outlook" role="presentation" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+
+
+      <div style="max-width: 100%; margin: 0px auto;">
+
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+          <tbody>
+            <tr>
+              <td style="direction: ltr; font-size: 0px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px;" align="center">
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="r-outlook f-outlook mj-s-outlook" width="640px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="r-outlook f-outlook mj-s-outlook" role="presentation" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+
+
+      <div class="r f mj-s" style="max-width: 640px; margin: 0px auto;">
+
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+          <tbody>
+            <tr>
+              <td style="direction: ltr; font-size: 0px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px;" align="center">
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="f-outlook mj-c-outlook nc-outlook" style="vertical-align:top;width:640px;" ><![endif]-->
+
+      <div class="mj-column-per-100 mj-outlook-group-fix f mj-c nc" style="font-size: 0px; direction: ltr; display: inline-block; vertical-align: top; width: 100%;" align="left">
+
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+        <tbody>
+          <tr>
+            <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px;" valign="top">
+
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+        <tbody>
+
+              <tr>
+                <td align="center" class="f89-87 mj-i nf" style="font-size: 0px; word-break: break-word; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px;">
+
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" class="mj-full-width-mobile">
+        <tbody>
+          <tr>
+            <td style="width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" class="mj-full-width-mobile" width="100%">
+      <img alt src="images/hero-banner.png" style="display: block; outline: none; text-decoration: none; width: 100%; font-size: 13px; max-width: 100%; height: auto; border-radius: 30px; line-height: 100%; -ms-interpolation-mode: bicubic; border-width: 0;" width="640" height="auto">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+                </td>
+              </tr>
+
+        </tbody>
+      </table>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      </div>
+
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+
+      <!--[if mso | IE]></td></tr></table></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="fb2-09-outlook r-outlook mj-w-outlook" role="presentation" style="width:640px;" width="640" bgcolor="#0B0B0B" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+
+
+      <div class="fb2-09 r mj-w" style="background: #0B0B0B; background-color: #0B0B0B; border-radius: 0px; max-width: 640px; margin: 0px auto;">
+
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #0B0B0B; width: 100%; border-radius: 0px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#0B0B0B">
+          <tbody>
+            <tr>
+              <td style="direction: ltr; font-size: 0px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px 60px;" align="center">
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="aa2-bc-outlook r-outlook f-outlook mj-s-outlook" width="640px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="aa2-bc-outlook r-outlook f-outlook mj-s-outlook" role="presentation" style="width:520px;" width="520" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+
+
+      <div class="aa2-bc r f mj-s" style="border-radius: 0px; max-width: 520px; margin: 0px auto;">
+
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; border-radius: 0px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+          <tbody>
+            <tr>
+              <td style="direction: ltr; font-size: 0px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px;" align="center">
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="d99-85-outlook f-outlook mj-c-outlook nc-outlook" style="vertical-align:middle;width:520px;" ><![endif]-->
+
+      <div class="mj-column-per-100 mj-outlook-group-fix d99-85 f mj-c nc" style="border-radius: 0px; font-size: 0px; direction: ltr; display: inline-block; vertical-align: middle; width: 100%;" align="left">
+
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+        <tbody>
+          <tr>
+            <td style="border-radius: 0px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px;" valign="middle" align="left">
+
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+        <tbody>
+
+              <tr>
+                <td align="left" class="fa5-76 text mj-t" style="font-size: 0px; word-break: break-word; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 10px 0px;">
+
+
+    <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="192px" style="vertical-align:top;height:192px;"><![endif]-->
+
+
+      <div style="font-family: Inter, Arial; font-size: 18px; font-style: normal; font-weight: 400; letter-spacing: 0px; line-height: 32px; text-decoration: none; text-transform: none; color: #C2C2C3; height: auto;" align="left"><span style="" class="text"><span style="color: #C2C2C3; text-decoration: none;" class="text">Hi there,<br><br>
+
+I'm TK. — I'm building <span style="color: #16A6F8; font-weight: 700;">Tsono Moto App</span> out of Dallas-Fort Worth, and I think you'll want to see this.<br><br>
+
+<span style="color: #16A6F8; font-weight: 700;">Tsono</span> is the riding app motorcycle culture has been waiting for. Not a fitness tracker with a bike skin. A purpose-built platform for how riders actually ride, connect, and spend.<br><br>
+</span></span></div>
+
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 8px 0 24px 0;">
+  <tr>
+    <td width="33.33%" style="padding: 0 6px 0 0;" valign="top">
+      <img src="images/screen-1.png" alt="Tsono app preview" width="173" style="width: 100%; height: auto; border-radius: 12px; display: block;" />
+    </td>
+    <td width="33.33%" style="padding: 0 6px;" valign="top">
+      <img src="images/screen-2.png" alt="Tsono app preview" width="173" style="width: 100%; height: auto; border-radius: 12px; display: block;" />
+    </td>
+    <td width="33.33%" style="padding: 0 0 0 6px;" valign="top">
+      <img src="images/screen-3.png" alt="Tsono app preview" width="173" style="width: 100%; height: auto; border-radius: 12px; display: block;" />
+    </td>
+  </tr>
+</table>
+
+<div style="font-family: Inter, Arial; font-size: 18px; font-style: normal; font-weight: 400; letter-spacing: 0px; line-height: 32px; text-decoration: none; text-transform: none; color: #C2C2C3; height: auto;" align="left"><span style="" class="text"><span style="color: #C2C2C3; text-decoration: none;" class="text">
+<span style="font-weight:700; color:#FFFFFF; font-size:20px;">Why DFW. Why now.</span><br><br>
+
+Texas has more registered motorcycles than almost any state, and DFW is the 4th largest metro in the country — 8 million people, year-round riding weather, and a motorcycle culture that runs deep. There's no dominant digital platform serving these riders. We're changing that, starting here.<br><br>
+
+<span style="font-weight:700; color:#FFFFFF; font-size:20px;">What's live today:</span><br><br>
+
+&bull; <span style="font-weight:700;">Route planning &amp; navigation</span> with community-shared rides<br>
+&bull; <span style="font-weight:700;">Garage management</span> — bikes, maintenance, mods<br>
+&bull; <span style="font-weight:700;">Group rides</span> with real-time location sharing<br>
+&bull; <span style="font-weight:700;">Social feeds, messaging,</span> and local event calendars<br>
+&bull; <span style="font-weight:700;">Marketplace foundations</span> for gear, parts, and bikes<br><br>
+
+The platform is a PWA built on <span style="font-weight:700;">Web Technologies</span> — no app store fees, instant updates, works on every device. Fully functional demo ready at <span style="color: #16A6F8;">'lets have a chat'</span>.<br><br>
+
+</span></span></div>
+
+<!-- Stats Card -->
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; margin: 20px 0;" width="100%">
+  <tbody>
+    <tr>
+      <td style="background: linear-gradient(135deg, #0D1B2A 0%, #1B2838 30%, #1A1040 70%, #0B0B0B 100%); background-color: #0D1B2A; border-radius: 20px; padding: 28px 28px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+
+        <!-- Header -->
+        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+          <tr>
+            <td style="padding-bottom: 20px; font-family: Inter, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #D0E8FF; line-height: 1.3;">
+              Why riders need Tsono:
+            </td>
+          </tr>
+        </table>
+
+        <!-- Stat Rows -->
+        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+          <!-- Row 1: 800K+ -->
+          <tr>
+            <td style="width: 110px; font-family: Inter, Arial, sans-serif; font-size: 32px; font-weight: 800; color: #ffffff; padding-bottom: 16px; vertical-align: middle;" width="110" valign="middle">
+              800K+
+            </td>
+            <td style="font-family: Inter, Arial, sans-serif; font-size: 14px; font-weight: 600; color: #16A6F8; padding-bottom: 16px; vertical-align: middle;" valign="middle">
+              registered motorcycles in Texas
+            </td>
+          </tr>
+          <!-- Row 2: 70% -->
+          <tr>
+            <td style="width: 110px; font-family: Inter, Arial, sans-serif; font-size: 32px; font-weight: 800; color: #ffffff; padding-bottom: 16px; vertical-align: middle;" width="110" valign="middle">
+              70%
+            </td>
+            <td style="font-family: Inter, Arial, sans-serif; font-size: 14px; font-weight: 600; color: #5CC8FF; padding-bottom: 16px; vertical-align: middle;" valign="middle">
+              of riders prefer group rides
+            </td>
+          </tr>
+          <!-- Row 3: 0 -->
+          <tr>
+            <td style="width: 110px; font-family: Inter, Arial, sans-serif; font-size: 32px; font-weight: 800; color: #ffffff; padding-bottom: 16px; vertical-align: middle;" width="110" valign="middle">
+              0
+            </td>
+            <td style="font-family: Inter, Arial, sans-serif; font-size: 14px; font-weight: 600; color: #A78BFA; padding-bottom: 16px; vertical-align: middle;" valign="middle">
+              dedicated platforms for group riding
+            </td>
+          </tr>
+        </table>
+
+        <!-- Divider -->
+        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+          <tr>
+            <td style="border-top: 1px solid #16A6F8; padding-top: 12px; font-family: Inter, Arial, sans-serif; font-size: 11px; color: #7A7A8A; line-height: 1.4;">
+              Sources: Texas DMV, Motorcycle Industry Council
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- /Stats Card -->
+
+<div style="font-family: Inter, Arial; font-size: 18px; font-style: normal; font-weight: 400; letter-spacing: 0px; line-height: 32px; text-decoration: none; text-transform: none; color: #C2C2C3; height: auto;" align="left"><span style="" class="text"><span style="color: #C2C2C3; text-decoration: none;" class="text"><span style="font-weight:700; color:#FFFFFF; font-size:20px;">The Ask</span><br><br>
+
+I'm raising a pre-seed round to scale from DFW into Texas and beyond. I'd love 20 minutes to walk you through the product and our roadmap.<br><br>
+
+Best,<br>
+<span style="font-weight:700; color:#FFFFFF;">Tk.</span><br>
+Founder, <span style="color: #16A6F8; font-weight: 700;">Tsono</span><br>
+Dallas-Fort Worth, Texas<br>
+<span style="color: #16A6F8;">kadangotinaishe5@gmail.com</span>
+
+</span></span></div>
+
+
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+
+
+                </td>
+              </tr>
+
+        </tbody>
+      </table>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      </div>
+
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+
+      <!--[if mso | IE]></td></tr></table></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+
+
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="d9f-4f-outlook r-outlook mj-w-outlook" role="presentation" style="width:640px;" width="640" bgcolor="#0B0B0B" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+
+
+      <div class="d9f-4f r mj-w" style="background: #0B0B0B; background-color: #0B0B0B; border-radius: 0px; max-width: 640px; margin: 0px auto;">
+
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #0B0B0B; width: 100%; border-radius: 0px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#0B0B0B">
+          <tbody>
+            <tr>
+              <td style="direction: ltr; font-size: 0px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 20px 0px;" align="center">
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="d9f-58-outlook r-outlook f-outlook mj-s-outlook" width="640px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="d9f-58-outlook r-outlook f-outlook mj-s-outlook" role="presentation" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+
+
+      <div class="d9f-58 r f mj-s" style="border-radius: 0px; max-width: 640px; margin: 0px auto;">
+
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; border-radius: 0px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+          <tbody>
+            <tr>
+              <td style="direction: ltr; font-size: 0px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px;" align="center">
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="d8d-bf-outlook f-outlook mj-c-outlook nc-outlook" style="vertical-align:top;width:640px;" ><![endif]-->
+
+      <div class="mj-column-per-100 mj-outlook-group-fix d8d-bf f mj-c nc" style="border-radius: 0px; font-size: 0px; direction: ltr; display: inline-block; vertical-align: top; width: 100%;" align="left">
+
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+        <tbody>
+          <tr>
+            <td style="border-radius: 0px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 20px 80px;" valign="top" align="left">
+
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+        <tbody>
+
+              <tr>
+                <td align="center" class="bae-96 mj-b" style="font-size: 0px; word-break: break-word; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px;">
+
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate; width: 300px; line-height: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+        <tbody>
+          <tr>
+            <td align="center" bgcolor="#FCFCFC" role="presentation" style="border-radius: 100px; cursor: auto; font-style: normal; height: 60px; mso-padding-alt: 0px 89px 0px 89px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-width: 0px;" valign="middle">
+              <a href="mailto:kadangotinaishe5@gmail.com" style="display: inline-block; width: 122px; background-color: #FCFCFC; color: #000000; font-family: Inter, Arial; font-size: 16px; font-style: normal; font-weight: 700; line-height: 50px; text-decoration: none; text-transform: uppercase; mso-padding-alt: 0px; border-radius: 100px; margin: 0; padding: 0px 89px;" >
+                <span class="text-btn-bae-96">Let's Talk</span>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+                </td>
+              </tr>
+
+        </tbody>
+      </table>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      </div>
+
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+
+      <!--[if mso | IE]></td></tr></table></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+
+
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="dab-2f-outlook r-outlook f-outlook mj-s-outlook" role="presentation" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+
+
+      <div class="dab-2f r f mj-s" style="border-radius: 0px; max-width: 640px; margin: 0px auto;">
+
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; border-radius: 0px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+          <tbody>
+            <tr>
+              <td style="direction: ltr; font-size: 0px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 40px 0px 0px;" align="center">
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="c80-fa-outlook f-outlook mj-c-outlook nc-outlook" style="vertical-align:top;width:640px;" ><![endif]-->
+
+      <div class="mj-column-per-100 mj-outlook-group-fix c80-fa f mj-c nc" style="border-radius: 0px; font-size: 0px; direction: ltr; display: inline-block; vertical-align: top; width: 100%;" align="left">
+
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+        <tbody>
+          <tr>
+            <td style="border-radius: 0px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px 40px 40px;" valign="top" align="left">
+
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+        <tbody>
+
+              <tr>
+                <td align="center" class="cb1-8e text mj-t" style="font-size: 0px; word-break: break-word; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 20px 0px 0px;">
+
+
+    <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="42px" style="vertical-align:top;height:42px;"><![endif]-->
+
+
+      <div style="font-family: Inter, Arial; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: 0px; line-height: 21px; text-decoration: none; text-transform: none; color: #C2C2C3; height: auto;" align="center"><span style="" class="text">&copy; 2026 Tsono<br>All rights reserved.</span></div>
+
+
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+
+
+                </td>
+              </tr>
+
+        </tbody>
+      </table>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      </div>
+
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+
+      <!--[if mso | IE]></td></tr></table></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+
+
+      </div>
+
+
+</body>
+</html>
